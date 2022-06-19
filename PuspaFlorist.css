@@ -1,0 +1,1059 @@
+/*Reset CSS mayer*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+
+/*CSS*/
+.body {
+    background: #ECEDEF;
+}
+
+/*CSS NAVBAR*/
+.navbar {
+    padding-left: 70px;
+    padding-right: 70px;
+    background: #3E5728;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+#navbarBrand {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(180deg, #E5B73B 2.7%, #FFC8C4 66.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+@media (max-width: 480px) {
+    .navbar-brand {
+        height: 50px;
+        width: 52%;
+        background-image: url("Picture/Logo.png");
+        background-size: 50px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        background-position: center;
+        text-indent: -9999px;
+        /*display:block;*/
+        /*text-indent:-99999em;*/
+        /*overflow:hidden;*/
+    }
+}
+
+.navbar-nav {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.ikon {
+    text-decoration: none;
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.ikon:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 992px){
+    .ikon {
+        text-indent: -9999px;
+    }
+}
+
+@media (max-width: 992px){
+    .icon {
+        text-indent: -9999px;
+        margin-bottom: -50%;
+    }
+}
+
+.icon {
+    padding-right: 70px;
+}
+
+.icon1 {
+    display: flex;
+}
+
+.icon1 li {
+    line-height: 50px;
+    margin-right: 15%;
+}
+
+/*Content1*/
+.box-masuk {
+    width: 200px;
+    height: 40px;
+    border: 3px solid #689157;
+
+    /*tengah*/
+    margin: auto;
+    margin-right: 2%;
+
+    /*text*/
+    font-family: 'Chakra Petch';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    color: #689157;
+
+    padding: 0px 65px;
+}
+
+.box-masuk:hover {
+    text-decoration: underline;
+    color: #4B6236;
+}
+
+.box-belanja {
+    width: 200px;
+    height: 40px;
+
+    background: #689157;
+
+    /*tengah*/
+    margin: auto;
+    margin-left: -8%;
+
+    /*text*/
+    font-family: 'Chakra Petch';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    color: #FFFFFF;
+
+    padding: 0px 30px;
+}
+
+.box-belanja:hover {
+    text-decoration: underline;
+    color: #4B6236;
+}
+
+.hero-image {
+    width: 500px;
+    margin: auto;
+    display: flex;
+}
+
+@media (max-width: 580px) {
+    .hero-image {
+        width: 250px;
+    }
+}
+
+#masuk {
+    margin-top: 416px;
+}
+
+#belanja {
+    margin-top: 416px;
+}
+
+#hero {
+    margin-top: 50px;
+}
+
+@media (max-width: 992px){
+    #masuk {
+        margin-top: 200px;
+    }
+    #belanja {
+        margin-top: 200px;
+    }
+    #hero {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 535px){
+    #masuk {
+        margin-top: 100px;
+    }
+    #belanja {
+        margin-top: 0px;
+    }
+    #hero {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 534px) {
+    .box-masuk {
+        margin: auto;
+    }
+    .box-belanja {
+        margin: auto;
+    }
+}
+
+/*Content2*/
+.content2 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+@media (max-width: 480px) {
+    .content2{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
+.produk-terbaru {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+/*Tabel content2*/
+.kotak-produk {
+    width: 200px;
+    height: 232px;
+
+    background: #689157;
+
+    /*tengah*/
+    margin: auto;
+    display: flex;
+}
+
+.love {
+    width: 35px;
+    height: 35px;
+
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.produk {
+    width: 149px;
+    height: 148px;
+
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: -12px;
+}
+
+.nama-produk {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    margin-top: 180px;
+    margin-left: -170px;
+}
+
+.nama-produk:hover {
+    color: #FFFFFF;
+}
+
+.harga-produk {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    text-decoration: none;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    margin-top: 200px;
+    margin-left: -170px;
+}
+
+.harga-produk:hover {
+    color: #FFFFFF;
+}
+
+.chart {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    margin-top: 175px;
+    margin-left: -35px;
+}
+
+/*Content3*/
+.kotak-iklan {
+    /*tengah*/
+    margin: auto;
+    display: flex;
+
+    width: 800px;
+    height: 80px;
+
+    background-image: url("Picture/Iklan1.png");
+}
+.kotak-iklan1 {
+    /*tengah*/
+    margin: auto;
+    display: flex;
+
+    width: 800px;
+    height: 80px;
+
+    background-image: url("Picture/Iklan2.png");
+}
+
+@media (max-width: 1139px) {
+    .kotak-iklan {
+        width: 640px;
+    }
+    .kotak-iklan1 {
+        width: 640px;
+    }
+}
+
+@media (max-width: 821px) {
+    .kotak-iklan {
+        width: 480px;
+    }
+    .kotak-iklan1 {
+        width: 480px;
+    }
+}
+
+@media (max-width: 660px) {
+    .kotak-iklan {
+        width: 340px;
+    }
+    .kotak-iklan1 {
+        width: 340px;
+    }
+}
+
+@media (max-width: 431px) {
+    .kotak-iklan {
+        width: 240px;
+    }
+    .kotak-iklan1 {
+        width: 240px;
+    }
+}
+
+@media (max-width: 322px) {
+    .kotak-iklan {
+        width: 200px;
+    }
+    .kotak-iklan1 {
+        width: 200px;
+    }
+}
+
+/*Content4*/
+.tentang-toko {
+    width: 800px;
+    height: 551px;
+
+    /*tengah*/
+    margin: auto;
+    display: flex;
+}
+
+.judul-toko {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+    /* identical to box height */
+
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+    /*Posisi*/
+    margin-top: 150px;
+}
+
+.nama-toko {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+    /*Posisi*/
+    margin-top: -5px;
+}
+
+.konten-toko {
+    width: 419px;
+
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    align-items: center;
+    text-align: justify;
+
+    color: #000000;
+
+    margin: auto;
+
+    /*Posisi*/
+    margin-top: -12px;
+}
+
+@media (max-width: 1139px) {
+    .tentang-toko {
+        width: 640px;
+        height: 432px;
+    }
+
+    .judul-toko {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 821px) {
+    .tentang-toko {
+        width: 480px;
+        height: 336px;
+    }
+
+    .judul-toko {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 660px) {
+    .tentang-toko {
+        width: 340px;
+        height: 217px;
+
+        margin-bottom: 20px;
+    }
+
+    .judul-toko {
+        margin-top: 100px;
+    }
+
+    .konten-toko {
+        width: 300px;
+    }
+}
+
+@media (max-width: 431px) {
+    .tentang-toko {
+        width: 240px;
+        height: 148px;
+    }
+
+    .judul-toko {
+        margin-top: 30px;
+    }
+
+    .konten-toko {
+        width: 220px;
+    }
+}
+
+@media (max-width: 322px) {
+    .tentang-toko {
+        width: 200px;
+        height: 121px;
+    }
+
+    .konten-toko {
+        width: 200px;
+    }
+}
+
+/*Content5*/
+.lihat-semua {
+    width: 200px;
+    height: 40px;
+    border: 3px solid #689157;
+
+    /*tengah*/
+    margin: auto;
+
+    /*text*/
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+
+    color: #689157;
+
+    padding: 0px 42px;
+}
+
+.lihat-semua:hover {
+    text-decoration: underline;
+    color: #4B6236;
+}
+
+/*Content6*/
+.lokasi-toko {
+    width: 800px;
+    height: 551px;
+
+    /*tengah*/
+    margin: auto;
+    display: flex;
+}
+
+.judul-lokasi {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+    /* identical to box height */
+
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+    /*Posisi*/
+    margin-top: 200px;
+}
+
+.konten-lokasi {
+    width: 419px;
+
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    align-items: center;
+    text-align: justify;
+
+    color: #000000;
+
+    margin: auto;
+
+    /*Posisi*/
+    margin-top: -5px;
+}
+
+@media (max-width: 1412px) {
+    .judul-lokasi {
+        margin-top: 0px;
+    }
+
+    .konten-lokasi {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1139px) {
+    .lokasi-toko {
+        width: 640px;
+        height: 432px;
+    }
+
+    .konten-lokasi {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 821px) {
+    .lokasi-toko {
+        width: 480px;
+        height: 336px;
+    }
+
+    .konten-lokasi {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 660px) {
+    .lokasi-toko {
+        width: 340px;
+        height: 217px;
+    }
+
+    .judul-lokasi {
+        margin-top: 0px;
+    }
+
+    .konten-lokasi {
+        width: 300px;
+    }
+}
+
+@media (max-width: 431px) {
+    .lokasi-toko {
+        width: 240px;
+        height: 148px;
+    }
+
+    .judul-lokasi {
+        margin-top: 30px;
+    }
+
+    .konten-lokasi {
+        width: 220px;
+    }
+}
+
+@media (max-width: 322px) {
+    .lokasi-toko {
+        width: 200px;
+        height: 121px;
+    }
+
+    .konten-lokasi {
+        width: 200px;
+    }
+}
+
+/*Content7*/
+.content7 {
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+@media (max-width: 1432px) {
+    .content7 {
+        padding-right: 300px;
+        padding-left: 300px;
+    }
+}
+
+@media (max-width: 1331px) {
+    .content7 {
+        padding-right: 250px;
+        padding-left: 250px;
+    }
+}
+
+@media (max-width: 1143px) {
+    .content7 {
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+}
+
+@media (max-width: 951px) {
+    .content7 {
+        padding-right: 150px;
+        padding-left: 150px;
+    }
+}
+
+@media (max-width: 860px) {
+    .content7 {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 573px) {
+    .content7 {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
+.pertanyaan {
+    /*tengah*/
+    margin: auto;
+
+    font-family: 'Chakra Petch';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    /* identical to box height */
+
+
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.tanya {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    /* identical to box height */
+
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    margin-top: 10px;
+}
+
+.jawab {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    /* identical to box height */
+
+    align-items: center;
+    text-align: left;
+
+    color: #FFFFFF;
+
+    margin-top: 10px;
+}
+
+/*Footer*/
+.footer {
+    background: #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.masuk {
+    width: 200px;
+    height: 40px;
+
+    border: 3px solid #FFFFFF;
+
+    /*tengah*/
+    margin: auto;
+
+    /*text*/
+    font-family: 'Chakra Petch';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 50px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    padding: 0px 65px;
+}
+
+.masuk:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.belanja {
+    width: 200px;
+    height: 40px;
+
+    background: #FFFFFF;
+
+    /*tengah*/
+    margin: auto;
+
+    /*text*/
+    font-family: 'Chakra Petch';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 50px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+
+    color: #000000;
+
+    padding: 0px 30px;
+}
+
+.belanja:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.balik {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 60px;
+    text-decoration: none;
+    /* identical to box height */
+
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.balik:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.kembali {
+    width: 48px;
+    height: 48px;
+}
+
+.bunder {
+    width: 50px;
+    height: 50px;
+
+    background-image: url("Picture/instagram.png");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: center;
+
+    margin-left: 37%;
+}
+
+.bunder1 {
+    width: 50px;
+    height: 50px;
+
+    background-image: url("Picture/facebook.png");
+    background-repeat: no-repeat;
+    background-size: 52px;
+    background-position: center;
+
+    margin-left: 2%;
+}
+
+@media (max-width: 1116px) {
+    .bunder {
+        margin-left: 30%;
+    }
+}
+
+@media (max-width: 956px) {
+    .bunder {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 832px) {
+    .bunder {
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 799px) {
+    .bunder {
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 700px) {
+    .bunder {
+        margin-left: 8%;
+    }
+    .bunder1 {
+        margin-left: 1%;
+    }
+}
+
+@media (max-width: 678px) {
+    .bunder {
+        margin-left: 5%;
+    }
+    .bunder1 {
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 634px) {
+    .bunder {
+        margin-left: 38%;
+    }
+    .bunder1 {
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 500px) {
+    .bunder {
+        margin-left: 32%;
+    }
+    .bunder1 {
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 338px) {
+    .bunder {
+        margin-left: 28%;
+    }
+    .bunder1 {
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 300px) {
+    .bunder {
+        margin-left: 20%;
+    }
+    .bunder1 {
+        margin-left: 2%;
+    }
+}
+
+.f-judul {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    /* identical to box height */
+
+    align-items: center;
+    text-align: center;
+
+    color: #444444;
+}
+
+.f-text {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+
+    color: #444444;
+}
+
+.f-text:hover {
+    text-decoration: underline;
+    color: #444444;
+}
+
+.bottom {
+    margin-bottom: -1%;
+    align-items: center;
+    text-align: center;
+}
+
+.f-text1 {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+
+    color: #444444;
+
+    align-items: center;
+    text-align: center;
+}
